@@ -21,6 +21,14 @@ export const Container = styled.div`
     padding: 1rem 0;
     color: #ffc857;
   }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 90%;
+  }
 `
 
 export const ListProjects = styled.div`
@@ -33,5 +41,10 @@ export const ListProjects = styled.div`
   align-items: center;
 
   width: 100%;
-  gap: 1rem;
+  padding-top: 2rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 `

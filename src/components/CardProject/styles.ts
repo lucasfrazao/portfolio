@@ -11,7 +11,7 @@ export const Container = styled.div`
   color: #f9f9f9;
 
   width: 100%;
-  max-width: fit-content;
+  height: 100%;
 
   padding: 2rem;
 

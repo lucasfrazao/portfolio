@@ -1,23 +1,31 @@
 import { GithubLogo } from 'phosphor-react'
 import { Container } from './styles'
 
-export function CardProject() {
+interface CardProjectProps {
+  name: string
+  description?: string
+  size?: number
+  language?: string
+}
+
+export function CardProject({
+  name,
+  description,
+  size,
+  language
+}: CardProjectProps) {
   return (
     <Container>
       <header>
         <GithubLogo size={32} />
-        <span>Rick and Morty</span>
+        <span>{name}</span>
       </header>
 
-      <span className="description">
-        Project created with target to study and improve my knowledges. Home
-        page design inspired by Rick And Morty Concept Page and consuming The
-        Rick and Morty API.
-      </span>
+      <span className="description">{description}</span>
 
       <div className="details">
-        <span className="language">Typescript</span>
-        <span className="size">1,232 KB</span>
+        <span className="language">{language}</span>
+        <span className="size">{size} KB</span>
       </div>
     </Container>
   )
