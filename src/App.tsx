@@ -1,5 +1,7 @@
 import { Header } from './components/Header'
 import { HeroCard } from './components/HeroCard'
+import { Work } from './components/Work'
+
 import { Container } from './styles'
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
     <Container>
       <Header />
       <HeroCard />
+      <Work />
     </Container>
   )
 }

@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   max-width: 50%;
   width: 80%;
-  height: 80vh;
+  height: 75vh;
 
   span:first-child {
     font-family: 'Space Mono', monospace;
@@ -28,6 +28,25 @@ export const Container = styled.div`
   .description {
     font-size: 1.25rem;
     color: #f9f9f9;
+  }
+
+  button {
+    font-family: 'Roboto', sans-serif;
+    color: #ffc857;
+
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+
+    background: none;
+    border-radius: 0.25rem;
+    border: 1px solid #ffc857;
+
+    transition: 0.2s;
+  }
+
+  button:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
   }
 
   @media screen and (max-width: 768px) {

@@ -38,6 +38,7 @@ export function Header() {
       </div>
 
       <div className="menu-pages">
+        <a>Skills</a>
         <a>About</a>
         <a>Work</a>
         <a>Contact</a>
