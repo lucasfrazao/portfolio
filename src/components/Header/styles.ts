@@ -74,5 +74,8 @@ export const Container = styled.nav`
   }
 
   @media screen and (max-width: 768px) {
+    .resume {
+      display: none;
+    }
   }
 `

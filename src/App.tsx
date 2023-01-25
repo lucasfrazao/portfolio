@@ -1,10 +1,13 @@
 import { Header } from './components/Header'
+import { HeroCard } from './components/HeroCard'
+import { Container } from './styles'
 
 function App() {
   return (
-    <div>
+    <Container>
       <Header />
-    </div>
+      <HeroCard />
+    </Container>
   )
 }
 
